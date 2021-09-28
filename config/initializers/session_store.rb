@@ -1,0 +1,1 @@
+Rails.application.config.session_store :cookie_store, key: '_mock_server_session'
