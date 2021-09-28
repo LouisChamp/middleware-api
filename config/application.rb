@@ -33,6 +33,8 @@ module MockServer
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.session_store :active_record_store,
-      :key => '_mock_server_session'
+      :key => '_mock_server_session',
+      :domain => :all,
+      :tld_length => 2
   end
 end
